@@ -30,7 +30,7 @@
 //! [Apache 2](https://github.com/sagiegurari/duckscript/blob/master/LICENSE) open source license.
 //!
 
-mod expansion;
+pub mod expansion;
 pub mod parser;
 mod preprocessor;
 pub mod runner;

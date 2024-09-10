@@ -11,7 +11,7 @@ use crate::parser;
 use crate::types::instruction::InstructionMetaInfo;
 use std::collections::HashMap;
 
-pub(crate) enum ExpandedValue {
+pub enum ExpandedValue {
     Single(String),
     Multi(Vec<String>),
     None,
@@ -33,7 +33,7 @@ fn push_prefix(buffer: &mut String, single_type: bool, found_prefix_fully: bool)
     }
 }
 
-pub(crate) fn expand_by_wrapper(
+pub fn expand_by_wrapper(
     value: &str,
     meta_info: &InstructionMetaInfo,
     variables: &HashMap<String, String>,
